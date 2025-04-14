@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-red-700 bg-opacity-80 flex justify-center align-center h-screen">
+        <div id="div" class="  text-center space-y-10 w-[60%] p-4 m-10 rounded-lg  border shadow-lg">
+            <h1 class="text-white uppercase  p-4 border-lg mt-6 font-bold">Guess Game</h1>
+            <p class="text-white text-xl"><ion-icon name="game-controller"></ion-icon></ion-icon><ion-icon name="game-controller"></ion-icon><ion-icon name="game-controller"></ion-icon></ion-icon></p>
+            <input type="text" id="inputfield" placeholder="Enter a number from 1-10" class="md:w-[30%] rounded-md p-4 active:text-blue-400"> <br>
+            <button  id="guessbtn" class="bg-white text-black rounded-lg p-1 px-4 shadow-lg shadow-blue-200 hover:bg-blue-500 active:bg-green-500 font-semibold">GUESS <span id="tries" class="px-2 border-2 border-solid rounded-md"><ion-icon name="heart" class="text-red-500"></ion-icon>5</span></button>
+            <button id="resetbtn" class="bg-gray-500 px-4 p-1 text-black shadow-lg hover:bg-red-500 active:bg-white rounded-md" >Reset</button>
+            <br>
+            <input id="result" type="textarea" placeholder="Result"  class="pl-6 pt-4 pb-4 rounded-sm shadow-lg shadow-blue-200"readonly >
+        </div>
+        
+ 
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="guess.js"></script>
+</body>
+</html>
